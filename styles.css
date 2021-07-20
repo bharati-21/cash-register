@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --bg-primary-color: #082164;
+    --text-primary-color: #93C5FD;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    height: 100vh;
+    max-width: 700px;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#body-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    color: #fff;
+    background-color: var(--bg-primary-color);
+    padding: 1rem;
+}
+
+.hero {
+    margin: 1rem 0 3rem 0;
+}
+
+.hero-head {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+}
+
+.hero-lead {
+    font-size: 1.3rem;
+}
+
+h3.section-head {
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+section.cash-amount-input {
+    padding-bottom: 1rem;
+}
+
+section.cash-return-output {
+    padding-top: 1rem;
+}
+
+input[type="number"] {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1.2rem;
+    border: none;
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+button.submit {
+    width: max-width;
+    margin: 1rem auto 2.5rem auto;
+    padding: 0.75rem 1rem;
+    
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    background-color: var(--text-primary-color);
+    color: var(--bg-primary-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(1fr, 2fr);
+    grid-template-columns: 2fr repeat(7, 1fr);
+    gap: 0.1rem;
+}
+
+.grid-container > div {
+    background: #fff;
+    color: #333;
+    padding: 0.5rem;
+    word-wrap: break-word;
+}
