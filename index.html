@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cash Register Manager</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="body-wrapper container">
+            <header class="hero text-center">
+                <h1 class="hero-head">💰 Cash Register Manager</h1>
+                <p class="hero-lead">Enter the bill amount and cash given by the customer to know the number of notes to return.</p>
+            </header>
+            <main class="main">
+                <section class="bill-amount-input">
+                    <h3 class="main-head text-center"><label for="bill-amount">Bill Amount</label></h3>
+                    <input type="number" name="bill-amount" id="bill-amount" class="bill-amount">
+                    <button class="submit">Submit Amount</button>
+                </section>
+                <section class="cash-amount-input hidden">
+                    <h3 class="main-head text-center"><label for="cash-amount">Cash Given</label></h3>
+                    <input type="number" name="cash-amount" id="cash-amount">
+                </section>
+
+                <section class="cash-return-output hidden">
+                    <h3 class="main-head text-center">Return Change</h3>
+                    <div class="grid-container">
+                        <div class="grid-item-row-one">
+                            <div class="grid-item notes-number">
+                                <div class="number two-thousand"></div>
+                                <div class="number five-hundred"></div>
+                                <div class="number hundred"></div>
+                                <div class="number twenty"></div>
+                                <div class="number ten"></div>
+                                <div class="number five"></div>
+                                <div class="number one"></div>
+                            </div>
+                        </div>
+                        <div class="grid-item-row-two">
+                            <div class="grid-item notes">
+                                <div class="note two-thousand"></div>
+                                <div class="number five-hundred"></div>
+                                <div class="note hundred"></div>
+                                <div class="note twenty"></div>
+                                <div class="note ten"></div>
+                                <div class="note five"></div>
+                                <div class="note one"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
