@@ -38,32 +38,39 @@ body {
 }
 
 .hero {
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 .hero-head {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
 }
 
 .hero-lead {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 h3.section-head {
     text-transform: uppercase;
-    margin: 1rem 0;
     font-size: 1.3rem;
 }
 
+section {
+    padding: 1rem 0;
+}
+
 section.cash-amount-input {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 section.cash-return-output {
-    padding-top: 1rem;
+    border-top: 2px solid #fff;
+}
+
+section.cash-return-output  .section-head {
+    margin: 1rem 0 2rem 0;
 }
 
 input[type="number"] {
@@ -77,34 +84,74 @@ input[type="number"] {
     margin: 1rem auto;
 }
 
-button.submit {
-    width: max-width;
-    margin: 1rem auto 2.5rem auto;
+.btn {
+    margin: 1rem auto 1.5rem auto;
     padding: 0.75rem 1rem;
     
     border-radius: 0.5rem;
     border: none;
     outline: none;
-    
-    display: block;
+
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 
     background-color: var(--text-primary-color);
     color: var(--bg-primary-color);
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out ;
+}
+
+
+.btn-submit, .btn-submit-cash {
+    display: block;
+}
+
+button.btn:hover {
+    background-color: #60A5FA;
+    transform: scale(1.05);
 }
 
 .grid-container {
     display: grid;
-    grid-template-rows: repeat(1fr, 2fr);
+    grid-template-rows: 1fr, 2fr;
     grid-template-columns: 2fr repeat(7, 1fr);
     gap: 0.1rem;
 }
 
 .grid-container > div {
     background: #fff;
-    color: #333;
-    padding: 0.5rem;
+    color: #000;
+    min-height: 50px;
+    padding: 1rem 0.5rem;
+    font-weight: bold;
     word-wrap: break-word;
+}
+
+.grid-container div.number:first-child, .grid-container div.note {
+    background-color: rgb(193, 239, 255);
+}
+
+.error-message {
+    background-color: #DC2626;
+    padding: 0.5rem 0.75rem;
+    width: 90%; 
+    margin: 0 auto 1.5rem auto;
+}
+
+
+.success-message {
+    background-color: #059669;
+    padding: 0.5rem 0.75rem;
+    width: 90%; 
+    margin: 0 auto 1.5rem auto;
+}  
+
+.hidden {
+    display: none;
+} 
+
+.visible {
+    display: block;
 }
