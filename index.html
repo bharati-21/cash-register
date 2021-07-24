@@ -8,14 +8,24 @@
         <title>Cash Register Manager</title>
 
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     </head>
     <body>
         <div id="body-wrapper">
+            <header>
+                <h2 class="logo">Bharati</h2>
+                <h3>
+                    <a href="https://github.com/bharati-21/cash-register" class="link github-repo">
+                        <i class="fab fa-github"></i>
+                        GitHub Repo
+                    </a>
+                </h3>
+            </header>
             <div class="container text-center"> 
-                <header class="hero">
-                    <h1 class="hero-head">💰 Cash Register Manager</h1>
-                    <p class="hero-lead">Enter the bill amount and cash given by the customer to know the number of notes to return.</p>
-                </header>
+                <section class="cash-register-hero">
+                    <h1 class="cash-register-hero-head">💰 Cash Register Manager</h1>
+                    <p class="cash-register-hero-lead">Enter the bill amount and cash given by the customer to know the number of notes to return.</p>
+                </section>
                 <main class="main">
                     <section class="bill-amount-input">
                         <h3 class="section-head"><label for="bill-amount">Bill Amount</label></h3>
@@ -26,7 +36,10 @@
                     <section class="cash-amount-input hidden">
                         <h3 class="section-head"><label for="cash-amount">Cash Given</label></h3>
                         <input type="number" name="cash-amount" id="cash-amount">
-                        <button class="btn btn-submit-cash">Submit Cash Amount</button>
+                        <div class="cash-amount-btn">
+                            <button class="btn btn-submit-cash">Submit Cash Amount</button>
+                            <button class="btn btn-clear">Clear Fields</button>
+                        </div>
                     </section>
                     
                     <section class="cash-return-output hidden">
@@ -52,8 +65,18 @@
                     </section>
                 </main>
             </div>
+            <footer>
+                <div class="small">
+                    <ul>
+                        <li>
+                            <a class="link" href="https://github.com/bharati-21/"><i class="fab fa-github"></i>Github</a>
+                            <a class="link" href="https://twitter.com/_girlwhocodes"><i class="fab fa-twitter"></i>Twitter</a>
+                            <a class="link" href="https://www.linkedin.com/in/bharati-subramanian-29734b152/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </div>
-
         <script src="main.js"></script>
     </body>
 </html>
