@@ -190,19 +190,20 @@ function displaySuccessMessage(display, messageText, section) {
 function calculateNumNotes(cash, bill) {
     let change = cash - bill;
     let numNotes = [];
-      for(let i = 0; i<notes.length; i++) {
-          if(change >= notes[i]) {
-              numNotes[i] = parseInt(change / notes[i])
-              change-= numNotes[i] * notes[i];
-              numNotesDiv[i].innerHTML = numNotes[i];
-          }
-          else {
-              numNotes[i] = "";
-          }
-      }
+    for(let i = 0; i<notes.length; i++) {
+        if(change >= notes[i]) {
+            numNotes[i] = parseInt(change / notes[i])
+            change-= numNotes[i] * notes[i];
+        }
+        else {
+            numNotes[i] = "";
+        }
+        numNotesDiv[i].innerHTML = numNotes[i];
+    }
 
-      console.log(numNotes)
-      /*
+    console.log(numNotes)
+    
+        /*
           if (change >= 2000) {
               numNotes[0] = parseInt(change / 2000);
               change -= 2000 * numNotes[0];
@@ -263,6 +264,6 @@ function clearNumNotesDiv() {
     */
 
     for(let i = 0; i<numNotesDiv.length; i++) {
-      numNotesDiv[i].textContent = "";
+      numNotesDiv[i].innerHTML = "";
     }
 }
