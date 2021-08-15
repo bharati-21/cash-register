@@ -13,6 +13,8 @@ const btnSubmit = document.querySelector('.btn-submit');
 const btnCashSubmit = document.querySelector('.btn-submit-cash')
 const btnReset = document.querySelector('.btn-reset')
 
+const returnAmount = document.querySelector('.return-amount');
+
 message.className = 'hidden';
 const notes = [2000, 500, 100, 20, 10, 5, 1];
 
@@ -95,7 +97,7 @@ function handleCashSubmit(e) {
         else {
             bill = parseInt(Math.round(billAmountValue, 0));
             cash = parseInt(Math.round(cashAmountInput, 0));
-            displaySuccessMessage(false, "", sectionCashAmountInput);
+            displaySuccessMessage(true, `₹${cash-bill} to be returned`, sectionCashAmountInput);
             changeDisplay(sectionCashAmountInput, true);
             changeDisplay(sectionCashReturnOutput, true);
 

@@ -223,3 +223,14 @@ a.link:hover{
     color: var(--text-primary-color);
     border-radius: 0.5rem;
 }
+
+@media screen and (max-width: 700px) {
+   
+    .grid-container  div {
+        padding: 1rem 0.25rem;
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 1rem 0.5rem;
+    }
+}
