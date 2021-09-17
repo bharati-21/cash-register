@@ -2,7 +2,7 @@
 Web App created using JavaScript that allows users to find the number of notes to return to a customer, given the bill and cash amount.
 
 ### This application tells user the cash to be paid, and the minimum number of notes to return when the user (cashier) enters the bill and the amount paid by the customer.
-Live demo of the application: https://cash-register-bharati.netlify.app/
+[Live demo of the application](https://cash-register-bharati.netlify.app/)
 <hr />
 
 ## PREREQUISITES
